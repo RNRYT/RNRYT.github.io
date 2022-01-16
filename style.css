@@ -43,7 +43,7 @@ body {
 }
 
 #myphotos .photos .row img {
-  height: 100px;
+  height: 90px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
@@ -59,13 +59,14 @@ body {
 }
 
 #myability .row .col img {
-  height: 100px;
+  height: 80px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
 
 #myability .gambar {
   margin-top: 3%;
+  margin-left: 5%;
 }
 
 /* socialmedia */
@@ -76,7 +77,7 @@ body {
 
 #socialmedia .col a {
   color: #000;
-  font-size: 40pt;
+  font-size: 30pt;
 }
 
 #socialmedia .col {
@@ -95,6 +96,14 @@ body {
 /* kata kata  */
 #katakata {
   margin-top: 5%;
+}
+
+#katakata h5 {
+  margin-top: 3%;
+}
+
+#katakata h3 {
+  font-size: 15pt;
 }
 
 @media (min-width: 992px) {
@@ -172,7 +181,7 @@ body {
 
   #socialmedia .col a {
     color: #000;
-    font-size: 40pt;
+    font-size: 45pt;
   }
 
   #socialmedia .col {
@@ -191,5 +200,13 @@ body {
   /* kata kata  */
   #katakata {
     margin-top: 5%;
+  }
+
+  #katakata h3 {
+    font-size: 25pt;
+  }
+
+  #katakata h5 {
+    font-size: 20pt;
   }
 }
