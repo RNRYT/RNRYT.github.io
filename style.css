@@ -20,6 +20,10 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+#perkenalan .deskripsi h5 {
+  font-size: 13pt;
+}
+
 /* img hover */
 
 .img-hover-zoom--blur img {
@@ -39,7 +43,7 @@ body {
 }
 
 #myphotos .photos .row img {
-  height: 250px;
+  height: 120px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
@@ -51,11 +55,11 @@ body {
 /* my ability */
 
 #myability {
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 #myability .row .col img {
-  height: 250px;
+  height: 150px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
