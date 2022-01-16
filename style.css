@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #c9ccd5;
+}
+
+/* perkenalan */
+#perkenalan {
+  margin-top: 7%;
+}
+
+#perkenalan a {
+  font-size: 25pt;
+  color: #000;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* img hover */
+
+.img-hover-zoom--blur img {
+  transition: transform 0.5s, filter 0.5s ease-in-out;
+  filter: blur(2px);
+  transform: scale(1);
+}
+.img-hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1.1);
+}
+
+/* my photos */
+
+#myphotos {
+  margin-top: 5%;
+}
+
+#myphotos .photos .row img {
+  height: 250px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#myphotos .photos {
+  margin-top: 3%;
+}
+
+/* my ability */
+
+#myability {
+  margin-top: 5%;
+}
+
+#myability .row .col img {
+  height: 250px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#myability .gambar {
+  margin-top: 3%;
+}
+
+/* socialmedia */
+
+#socialmedia {
+  margin-top: 4%;
+}
+
+#socialmedia .col a {
+  color: #000;
+  font-size: 40pt;
+}
+
+#socialmedia .col {
+  margin-top: 3%;
+}
+
+/* copyright */
+
+#copyright {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  margin-top: 50px;
+}
+
+/* kata kata  */
+#katakata {
+  margin-top: 5%;
+}
