@@ -43,7 +43,7 @@ body {
 }
 
 #myphotos .photos .row img {
-  height: 120px;
+  height: 100px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 #myability .row .col img {
-  height: 150px;
+  height: 100px;
   margin-bottom: 15px;
   border-radius: 10px;
 }
