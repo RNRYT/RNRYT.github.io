@@ -1,212 +1,137 @@
+/* Font faces */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* End of font faces */
+
+/* Mode */
+:root {
+  --curve: 40;
+  --background: #f3f5f8;
+  --background-secondary: #ffffff;
+  --custom-background-1: rgb(146, 170, 241);
+  --custom-background-2: rgb(21, 85, 233);
+  --custom-background-3: #5b5b5b;
+  --custom-background-4: #373745;
+  --text-primary: #28292e;
+  --text-secondary: #55565b;
+  --hover-text-secondary: rgba(233, 233, 233, 0.5);
+  --nav-link: #3e55e9;
+  --theme-primary: #8cb4ec;
+  --theme-secondary: #7790fc;
+  --hover-theme-secondary: rgba(119, 174, 252, 0.5);
+  --navbar: rgba(255, 255, 255, 0.5);
+  --nav-logos: url(/img/logo.jpg);
+}
+
+html[data-color-mode="dark"] {
+  --curve: 40;
+  --background: rgb(28, 26, 57);
+  --background-secondary: rgb(18, 16, 64);
+  --custom-background-1: #9d77fc;
+  --custom-background-2: #8cb4ec;
+  --custom-background-3: #cddaec;
+  --custom-background-4: #c6daf7;
+  --text-primary: #ececec;
+  --text-secondary: #cccccc;
+  --hover-text-secondary: #141432;
+  --nav-link: #ececec;
+  --theme-primary: rgb(80, 80, 159);
+  --theme-secondary: rgb(59, 38, 211);
+  --hover-theme-secondary: rgba(88, 107, 231, 0.496);
+  --navbar: rgba(36, 36, 36, 0.5);
+  --nav-logos: url(/img/logo.jpg);
+}
+
+/* End of mode */
+
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-primary) transparent;
 }
 
-body {
-  background: #c9ccd5;
+/*  Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
 }
 
-/* perkenalan */
-#perkenalan {
-  margin-top: 17%;
+*::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-#perkenalan a {
-  font-size: 25pt;
-  color: #000;
-  text-decoration: none;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+*::-webkit-scrollbar-thumb {
+  background-color: var(--theme-secondary);
+  border-radius: 20px;
+  border: 3px solid transparent;
 }
 
-#perkenalan .deskripsi h5 {
-  font-size: 13pt;
+body,
+html {
+  background-color: var(--background);
+  color: var(--text-primary);
 }
 
-/* img hover */
-
-.img-hover-zoom--blur img {
-  transition: transform 0.5s, filter 0.5s ease-in-out;
-  filter: blur(2px);
-  transform: scale(1);
-}
-.img-hover-zoom--blur:hover img {
-  filter: blur(0);
-  transform: scale(1.1);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
 }
 
-/* my photos */
+#navbar a {
+  color: var(--custom-background-3);
+}
 
-#myphotos {
+#navbar a:hover {
+  color: var(--theme-primary);
+}
+
+#home #jumbotron {
   margin-top: 10%;
 }
 
-#myphotos .photos .row img {
-  height: 90px;
-  margin-bottom: 15px;
+#home img {
   border-radius: 10px;
+  box-shadow: 0 4px 10px var(--hover-theme-secondary);
 }
 
-#myphotos .photos {
+#home h1:hover {
+  color: var(--theme-secondary);
+}
+
+.btn-dark {
+  background: linear-gradient(30deg, var(--theme-primary), var(--theme-secondary));
+  transition: 0.3s;
+}
+
+.btn-dark:hover {
+  background: linear-gradient(30deg, var(--theme-secondary), var(--theme-secondary));
+  box-shadow: 0 10px 10px var(--hover-theme-secondary);
+  transform: translateY(-2px);
+}
+
+#about h2 {
+  margin-top: 10%;
+}
+
+#about h2:hover {
+  color: var(--theme-secondary);
+}
+
+#about h5 {
   margin-top: 3%;
 }
 
-/* my ability */
-
-#myability {
-  margin-top: 7%;
+#about h5:hover {
+  color: var(--theme-primary);
 }
 
-#myability .row .col img {
-  height: 80px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-}
-
-#myability .gambar {
-  margin-top: 3%;
-  margin-left: 5%;
-}
-
-/* socialmedia */
-
-#socialmedia {
-  margin-top: 4%;
-}
-
-#socialmedia .col a {
-  color: #000;
-  font-size: 30pt;
-}
-
-#socialmedia .col {
-  margin-top: 3%;
-}
-
-/* copyright */
-
-#copyright {
-  text-align: center;
-  width: 100%;
-  padding: 50px 0px 50px 0px;
-  margin-top: 50px;
-}
-
-/* kata kata  */
-#katakata {
+#hobbies {
   margin-top: 5%;
 }
 
-#katakata h5 {
-  margin-top: 3%;
-}
-
-#katakata h3 {
-  font-size: 13pt;
-}
-
-@media (min-width: 992px) {
-  * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
-
-  body {
-    background: #c9ccd5;
-  }
-
-  /* perkenalan */
-  #perkenalan {
-    margin-top: 7%;
-  }
-
-  #perkenalan a {
-    font-size: 25pt;
-    color: #000;
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  }
-
-  /* img hover */
-
-  .img-hover-zoom--blur img {
-    transition: transform 0.5s, filter 0.5s ease-in-out;
-    filter: blur(2px);
-    transform: scale(1);
-  }
-  .img-hover-zoom--blur:hover img {
-    filter: blur(0);
-    transform: scale(1.1);
-  }
-
-  /* my photos */
-
-  #myphotos {
-    margin-top: 5%;
-  }
-
-  #myphotos .photos .row img {
-    height: 250px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-  }
-
-  #myphotos .photos {
-    margin-top: 3%;
-  }
-
-  /* my ability */
-
-  #myability {
-    margin-top: 5%;
-  }
-
-  #myability .row .col img {
-    height: 250px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-  }
-
-  #myability .gambar {
-    margin-top: 3%;
-  }
-
-  /* socialmedia */
-
-  #socialmedia {
-    margin-top: 4%;
-  }
-
-  #socialmedia .col a {
-    color: #000;
-    font-size: 45pt;
-  }
-
-  #socialmedia .col {
-    margin-top: 3%;
-  }
-
-  /* copyright */
-
-  #copyright {
-    text-align: center;
-    width: 100%;
-    padding: 50px 0px 50px 0px;
-    margin-top: 50px;
-  }
-
-  /* kata kata  */
-  #katakata {
-    margin-top: 5%;
-  }
-
-  #katakata h3 {
-    font-size: 25pt;
-  }
-
-  #katakata h5 {
-    font-size: 20pt;
-  }
+#hobbies h2:hover {
+  color: var(--theme-secondary);
 }
